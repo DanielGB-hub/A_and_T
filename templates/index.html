@@ -1,0 +1,144 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Студия звукозаписи</title>
+		<style type="text/css">
+			body {
+				font-family: Arial, Verdana, sans-serif;
+				font-size: 90%;
+				color: #666;
+				background-color: #ebf6f6;}
+			li {
+				list-style-image: url("images/icon-plus.png");
+				line-height: 1.6em;}
+			table {
+				border-spacing: 0px;}
+			th, td {
+				padding: 5px 30px 5px 10px;
+				border-spacing: 0px;
+				font-size: 90%;
+				margin: 0px;}
+			th, td {
+				text-align: left;
+				background-color: #BAE0E2;
+				border-top: 1px solid #7FD6DB;
+				border-bottom: 1px solid #cbd2d8;
+				border-right: 1px solid #7FD6DB;}
+			tr.head th {
+				color: #fff;
+				background-color: #389482;
+				border-bottom: 2px solid #00565B;
+				border-right: 1px solid #00565B;
+				border-top: 1px solid #00565B;
+				text-align: center;
+				text-shadow: -1px -1px 1px #666666;
+				letter-spacing: 0.15em;}
+			td {
+				text-shadow: 1px 1px 1px #ffffff;}
+			tr.even td, tr.even th {
+				background-color: #BAE0E2;}
+			tr.head th:first-child {
+				-webkit-border-top-left-radius: 5px;
+				-moz-border-radius-topleft: 5px;
+				border-top-left-radius: 5px;}
+			tr.head th:last-child {
+				-webkit-border-top-right-radius: 5px;
+				-moz-border-radius-topright: 5px;
+				border-top-right-radius: 5px;}
+			fieldset {
+				width: 310px;
+				margin-top: 20px;
+				border: 1px solid #7FD6DB;
+				background-color: #BAE0E2;
+				line-height: 1.6em;}
+			legend {
+				font-style: italic;
+				color: #666666;}
+			input[type="text"] {
+				width: 160px;
+				border: 1px solid #d6d6d6;
+				padding: 2px;
+				outline: none;}
+			input[type="text"]:focus,
+			input[type="text"]:hover {
+				background-color: #ebf6f6;
+				border: 1px solid #999999;}
+			input[type="submit"] {
+				border: 1px solid #006633;
+				background-color: #00565B;
+				color: #ffffff;
+				border-radius: 5px;
+				padding: 5px;
+				margin-top: 10px;}
+			input[type="submit"]:hover {
+				border: 1px solid #006633;
+				background-color: #389482;
+				color: #ffffff;
+				cursor: pointer;}
+			.title {
+				float: left;
+				width: 120px;
+				clear: left;}
+			.submit {
+				width: 310px;
+				text-align: right;}
+		</style>
+	</head>
+	<body>
+		<h1>Наше расписание</h1>
+		<p>Все программы действуют в течение года.</p>
+		<p>Расписание на месяц: {{data}} <b>(месяц подставляется шаблоном)</b></p>
+		<table>
+			<tr class="head">
+				<th></th>
+				<th>Время</th>
+				<th>Преподаватель</th>
+				<th>Помещение</th>
+			</tr>
+			<tr>
+				<th>Основы вокала</th>
+				<td>Вторник и Четверг <br />18:00 - 20:00</td>
+				<td>Елена Белова</td>
+				<td>Студия</td>
+			</tr>
+			<tr class="even">
+				<th>Сведение и мастеринг</th>
+				<td>Понедельник и Пятница<br />19:00 - 21:00</td>
+				<td>Павел Шишкин</td>
+				<td>Студия</td>
+			</tr>
+			<tr>
+				<th>Гитара и бас</th>
+				<td>Понедельник и Четверг<br />18:00 - 20:00</td>
+				<td>Павел Прохоров</td>
+				<td>Репетиционная</td>
+			</tr>
+			<tr class="even">
+				<th>Аранжировка и принципы создния музыки</th>
+				<td>Среда и Суббота<br />18:00 - 21:00</td>
+				<td>Валерий Остриков</td>
+				<td>Репетиционная</td>
+			</tr>
+		</table>
+		<form action="" method="post">
+			<fieldset>
+				<legend>Зарегистрируйтесь</legend>
+				<p><label class="title" for="name">Ваше имя:</label>
+					 <input type="text" name="name" id="name"><br />
+					 <label class="title" for="email">Ваш email:</label>
+					 <input type="text" name="email" id="email"></p>
+				<p><label for="location" class="title">Интересующий курс:</label>
+					 <select name="location" id="location">
+						 <option value="ny">Основы вокала</option>
+						 <option value="il">Сведение и мастеринг</option>
+						 <option value="ca">Гитара и бас</option>
+                         <option value="cl">Аранжировка и принципы создния музыки</option>
+					 </select></p>
+				<span class="title">Уже участник?</span>
+				<label><input type="radio" name="member" value="yes" /> Да</label>
+				<label><input type="radio" name="member" value="no" /> Нет</label></p>
+			</fieldset>
+ 	    <div class="submit"><input type="submit" value="Регистрация" /></div>
+		</form>
+	</body>
+</html>
