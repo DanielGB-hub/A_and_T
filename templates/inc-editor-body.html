@@ -1,0 +1,32 @@
+<div class="content">
+    <h2 class="heading2">Редактор</h2>
+	<div>
+		<ul class="menu_editor">
+        	<li><a href="/create-category/">Создать категорию</a></li>
+<!--			<li><a href="/add-teacher/">Добавить преподавателя</a></li>-->
+		</ul>
+	</div>
+	<div>
+<!--		<h3>Список категорий:</h3>-->
+		<table>
+        <tr class="head">
+            <th>Название категории</th>
+            <th>Кол-во курсов</th>
+            <th>Содержимое</th></tr>
+        </tr>
+        {% for item in objects_list %}
+        <tr>
+            <td><b>{{item.name}}</b></td>
+            <td>{{item.course_count()}}</td>
+            <td><a href="/courses-list/?id={{item.id}}">Показать курсы</a></td></tr> <!--ряд с ячейками тела таблицы-->
+        {% endfor %}
+    	</table>
+<!--		<ul class="s3">-->
+<!--        {% for item in objects_list %}-->
+
+<!--        	<li><b>{{item.name}}</b></li> <li><legend>Кол-во: <b>{{item.course_count()}}</b></legend></li>-->
+<!--				<li><a href="/courses-list/?id={{item.id}}">Показать курсы</a></li>-->
+<!--        {% endfor %}-->
+<!--		</ul>-->
+	</div>
+</div>

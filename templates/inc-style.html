@@ -1,0 +1,215 @@
+<style type="text/css">
+/* Общее позиционирование */
+    .wrapper {
+        width: 800px;
+        display: table;
+        height: 100%;
+        margin: 0 auto;
+        }
+
+/* Элементы меню (menu)*/
+    .title_head {   /* Надпись над меню(Студия Звукозаписи Антиллия) */
+        color: #00565B; /* цвет */
+        font-family: Comic Sans MS, Verdana, sans-serif;
+        }
+    ul.header {   /* Список меню */
+        margin: 0; /* Обнуляем значение отступов */
+        padding: 4px; /* Значение полей */
+        background-color: #BAE0E2; /* цвет фона */
+        }
+    ul.header li {   /* Пункты списка меню */
+        font-family: Arial, Verdana, sans-serif;
+        display: inline; /* Отображать как строчный элемент */
+        margin-right: 20px; /* Отступ слева */
+        margin-left: 10px;  /* Отступ справа */
+        text-align: center;
+        }
+    A {   /* Пункты списка меню */
+        color: #00565B; /* Цвет ссылок */
+        text-decoration: none; /* убрать подчеркивание */
+        }
+
+/* Элементы контента(content) */
+    .content {
+         height: 540px;
+         }
+    body {
+        font-family: Arial, Verdana, sans-serif;
+        color: #00565B;
+        background-color: #ebf6f6;
+        }
+    li {
+        list-style-image: url("images/icon-plus.png");
+        line-height: 1.6em;
+        }
+    table {
+        border-spacing: 0px;
+        }
+    th, td {
+        padding: 5px 30px 5px 10px;
+        border-spacing: 0px;
+        font-size: 90%;
+        margin: 0px;
+        }
+    th, td {
+        text-align: left;
+        background-color: #BAE0E2;
+        border-top: 1px solid #7FD6DB;
+        border-bottom: 1px solid #cbd2d8;
+        border-right: 1px solid #7FD6DB;
+        }
+    tr.head th {
+        color: #fff;
+        background-color: #389482;
+        border-bottom: 1px solid #00565B;
+        border-right: 1px solid #00565B;
+        border-top: 1px solid #00565B;
+        text-align: center;
+        }
+    td {
+        text-shadow: 1px 1px 1px #ffffff;
+        }
+    tr.even td, tr.even th {
+        background-color: #BAE0E2;
+        }
+    tr.head th:first-child {
+        -webkit-border-top-left-radius: 5px;
+        -moz-border-radius-topleft: 5px;
+        border-top-left-radius: 5px;
+        }
+    tr.head th:last-child {
+        -webkit-border-top-right-radius: 5px;
+        -moz-border-radius-topright: 5px;
+        border-top-right-radius: 5px;
+        }
+    fieldset {
+        width: 325px;
+        margin-top: 5px;
+        border: 1px solid #7FD6DB;
+        background-color: #BAE0E2;
+        line-height: 1.6em;
+        }
+    legend {
+        font-style: italic;
+        color: #00565B;
+        }
+    input[type="text"] {
+        width: 198px;
+        border: 1px solid #d6d6d6;
+        padding: 2px;
+        outline: none;
+        }
+    input[type="text"]:focus,
+    input[type="text"]:hover {
+        background-color: #ebf6f6;
+        border: 1px solid #999999;}
+    input[type="submit"] {
+        border: 1px solid #006633;
+        background-color: #00565B;
+        color: #ffffff;
+        border-radius: 5px;
+        padding: 5px;
+        width: 100px;
+        margin-left: 5px;
+        margin-right: 10px;
+        }
+    input[type="submit"]:hover {
+        border: 1px solid #006633;
+        background-color: #389482;
+        color: #ffffff;
+        cursor: pointer;
+        }
+    .title {
+        float: left;
+        width: 120px;
+        clear: left;
+        }
+    .title1 {
+        width: 100px;
+        clear: left;
+        }
+    .submit {
+        width: 90px;
+        text-align: right;
+        }
+    .parent {   /* Блоки в списке регистрации, чтобы стояли в одну строку */
+        height: 30px;
+        }
+    .child {
+        display: inline-block;
+        }
+    .reg_select select {
+        width: 323px; /* Ширина списка в пикселах */
+        }
+    h2 {
+        margin: 5px;
+        }
+    ul.s3 {
+        display: flex;
+        flex-wrap: wrap;
+        }
+    ul.s3 li {
+        flex-basis: 33%;
+        display: block;
+        }
+
+/* Элементы футера (footer) */
+    .footer {
+        margin-top: 20px;
+        text-align: center;
+        background-color: #00565B;
+        height: 50px; /* высота блока 50 пикселей */
+        }
+    .footer_text {
+        color: #fff;
+        padding: 15px;
+        }
+
+/* Элементы для страницы contacts */
+    .button-box {   /* кнопки в форме отправки сообщения */
+        text-align: right;
+        }
+    .button {
+        border: 1px solid #006633;
+        background-color: #00565B;
+        color: #ffffff;
+        border-radius: 5px;
+        padding: 5px;
+        margin-top: 10px;
+        width: 100px;
+        }
+    .inputarea {   /* окно для ввода сообщения в форме отправки сообщения */
+        border: 1px solid #d6d6d6;
+        margin-top: 3px;
+        width: 318px;
+        }
+    .parent_contacts {   /* Блоки в списке формы отправки сообщения, чтобы кнопки стояли в одну строку справа */
+        height: 30px;
+        text-align: right;
+        margin-bottom: 10px;
+        }
+
+/* Элементы для страниц редактора (editor) */
+    ul.menu_editor {   /* Список меню */
+        margin: 0; /* Обнуляем значение отступов */
+        padding: 4px; /* Значение полей */
+        /* background-color: #BAE0E2; /* цвет фона */ */
+        }
+    ul.menu_editor li {   /* Пункты списка меню */
+        font-family: Arial, Verdana, sans-serif;
+        display: inline; /* Отображать как строчный элемент */
+        margin-right: 20px; /* Отступ слева */
+        margin-left: 10px;  /* Отступ справа */
+        text-align: center;
+        }
+        .edit_select select {
+        width: 158px; /* Ширина списка в пикселах */
+        }
+        .edit_title {
+            float: left;
+            width: 125px;
+            clear: left;
+        }
+
+    }
+</style>
