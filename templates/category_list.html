@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block title %}
+Список курсов
+{% endblock %}
+{% block style %}
+	{% include "inc-style.html" %}
+{% endblock %}
+{% block menu %}
+	{% include "inc-menu.html" %}
+{% endblock %}
+{% block content %}
+    <a href="/editor/">назад</a>
+
+    <h2>Список категорий</h2>
+
+    <ul>
+
+        {% for item in objects_list %}
+        <li>
+            {{item.name}} <span>Количество курсов: {{item.course_count()}}</span>
+        </li>
+        {% endfor %}
+    </ul>
+
+	<div>
+		<li><a href="/courses-list/">Список курсов</a></li>
+		<li><a href="/create-course/">Создать курс</a></li>
+	</div>
+{% endblock %}

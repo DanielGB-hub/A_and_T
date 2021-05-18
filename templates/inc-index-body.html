@@ -1,0 +1,70 @@
+<div class="content">
+    <h2>Расписание занятий</h2>
+    <p>Расписание на месяц {{data_month}}:</p>
+    <table>
+        <tr class="head">
+            <th></th>
+            <th>Время</th>
+            <th>Преподаватель</th>
+            <th>Помещение</th>
+        </tr>
+        <tr>
+            <th>Основы вокала</th>
+            <td>Вторник и Четверг <br />18:00 - 20:00</td>
+            <td>Елена Белова</td>
+            <td>Студия</td>
+        </tr>
+            <tr>
+            <th>Сведение и мастеринг</th>
+            <td>Понедельник и Пятница<br />19:00 - 21:00</td>
+            <td>Павел Шишкин</td>
+            <td>Студия</td>
+        </tr>
+        <tr>
+            <th>Гитара и бас</th>
+            <td>Понедельник и Четверг<br />18:00 - 20:00</td>
+            <td>Павел Прохоров</td>
+            <td>Репетиционная</td>
+        </tr>
+        <tr>
+            <th>Аранжировка и принципы создния музыки</th>
+            <td>Среда и Суббота<br />18:00 - 21:00</td>
+            <td>Валерий Остриков</td>
+            <td>Репетиционная</td>
+        </tr>
+    </table>
+    <form action="" method="post">
+    <fieldset>
+    <legend>Зарегистрируйтесь</legend>
+    <p><label class="title" for="name">Ваше имя:</label>
+         <input type="text" name="name" id="name"><br />
+         <label class="title" for="email">Ваш email:</label>
+         <input type="text" name="email" id="email"></p>
+    <p><label for="location" class="title">Курс:</label></p>
+        <div class="reg_select">
+            <p><select name="location" id="location">
+                <option value="ny">Основы вокала</option>
+                <option value="il">Сведение и мастеринг</option>
+                <option value="ca">Гитара и бас</option>
+                <option value="cl">Аранжировка и принципы создния музыки </option>
+            </select></p>
+        </div>
+
+    <div class="parent">
+        <div class="child">
+            <span class="title1">Уже участник?</span>
+        </div>
+        <div class="child">
+            <label><input type="radio" name="member" value="yes" /> Да</label>
+            <label><input type="radio" name="member" value="no" /> Нет</label>
+        </div>
+        <div class="child">
+            <div class="submit"><input type="submit" value="Регистрация" /></div>
+        </div>
+    </div>
+    </fieldset>
+    </form>
+</div>
+
+
+
